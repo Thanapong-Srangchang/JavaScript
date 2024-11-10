@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const findgrade =  (score)=> {
+            if (score > 100 || score < 0 ) {
+                return'คะแนนผิดพลาด';
+            }  
+            if (score>= 80)  {
+                return   'A';
+            }  
+            if (score >=70)  {
+                return   'B';
+            }  
+            if (score >= 60) {
+                return   'C';
+            }  
+            if (score >= 50) {
+                return   'D';
+            } 
+            
+            return   'F';
+            
+        
+        }
+
+        const StudentA = findgrade(150);
+        console.log('std A : ',StudentA);
+
+        const StudentB = findgrade(71);
+        console.log('std B : ',StudentB);
+
+        const StudentC = findgrade(65);
+        console.log('std C : ',StudentC);
+
+        const StudentD = findgrade(51);
+        console.log('std D : ',StudentD);
+
+        
+
+        //  const sawasdee = (name)=>{
+        //     let suffix =  '';
+        //     if (name !== undefined){
+        //         suffix = `  คุณ${name}`;
+        //     }
+
+        //     return`สวัสดีจ้า${suffix}`
+
+        //     if (name === undefined) {
+        //         return'สวัสดีจ้า';
+        //     } else {
+        //         return`สวัสดีจ้าา คุณ${name}`;
+        //     }
+        // }
+
+        // const s1= sawasdee();
+        // const s2= sawasdee('มอสมอส');
+
+        // console.log(s1,  '  &  '  , s2);
+
+
+       // function sawasdee (name){
+         //   if (name === undefined) {
+           //     console.log('สวัสดีจ้า')
+            //} else {
+              //  console.log(`สวัสดีจ้าา คุณ${name}`);
+            //}
+
+            
+        //}
+
+       
+    </script>
+</body>
+</html>

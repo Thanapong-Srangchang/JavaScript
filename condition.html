@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let grade = '';
+        const score = 75;
+
+        if (score > 100 || score < 0 ){
+            console.log('คะแนนผิดพลาด')
+        } else if (score>= 80) {
+            grade =  ('A');
+        } else if (score >=70){
+             grade =('B');
+        } else if (score >= 60) {
+            grade =g('C');
+        } else if (score >= 50) {
+            grade =('D');
+        } else {
+            grade = ('F');
+        }
+       
+       //console.log ('grade:' + grade)
+       console.log(`grade: ${grade}`);
+    </script>
+
+</body>
+</html>

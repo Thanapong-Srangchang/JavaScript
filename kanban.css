@@ -1,0 +1,46 @@
+/* {
+    box-sizing: border-box;
+}
+
+html , body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#kanbanBoard {
+    display: flex;
+    width: 100%;
+    column-gap: 24px;
+    height: 100%;
+    padding: 48px;
+
+}
+
+.swimlane {
+    border: 1px solid black;
+    flex-basis: 1;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.card {
+    padding:  16px;
+    border-radius: 4px;
+    
+    .toDo  & {
+        background-color: aquamarine;
+    }
+    .inProgress & {
+        background-color: rgb(243, 22, 206);
+    }
+    .done & {
+        background-color: springgreen;
+    }
+}
+
+#dragged {
+    background-color: brown;
+}
